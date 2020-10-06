@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 class ItemUnitAdapter :RecyclerView.Adapter<ItemUnitAdapter.ItemViewHolder>(){
 
 
-    class ItemViewHolder(view: View): RecyclerView.ViewHolder(view){}
+    class ItemViewHolder(view: View): RecyclerView.ViewHolder(view)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int)= ItemViewHolder(
         LayoutInflater.from(parent.context).inflate(R.layout.item_layout,parent,false)

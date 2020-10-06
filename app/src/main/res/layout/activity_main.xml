@@ -16,7 +16,7 @@
 
         <RelativeLayout
             android:id="@+id/relative_layout"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="50dp">
 
             <TextView
@@ -77,7 +77,7 @@
                 android:layout_margin="10dp"
                 android:background="@drawable/search_background"
                 android:drawableStart="@drawable/ic_baseline_search_24"
-                android:drawableEnd="@drawable/ic_baseline_camera_24"
+                android:drawableEnd="@drawable/ic_baseline_photo_camera_24"
                 android:drawablePadding="15dp"
                 android:hint="Search"
                 android:imeOptions="actionDone"
@@ -114,9 +114,9 @@
                 android:layout_height="200dp"
                 android:layout_marginTop="5dp"
                 app:sliderAnimationDuration="200"
+                app:sliderAutoCycleDirection="back_and_forth"
                 app:sliderAutoCycleEnabled="true"
                 app:sliderIndicatorAnimationDuration="200"
-                app:sliderAutoCycleDirection="back_and_forth"
                 app:sliderIndicatorGravity="center_horizontal|bottom"
                 app:sliderIndicatorMargin="15dp"
                 app:sliderIndicatorOrientation="horizontal"
@@ -124,7 +124,7 @@
                 app:sliderIndicatorRadius="1.5dp"
                 app:sliderIndicatorSelectedColor="@android:color/white"
                 app:sliderIndicatorUnselectedColor="@android:color/primary_text_light"
-                app:sliderScrollTimeInSec="1"
+                app:sliderScrollTimeInSec="5"
                 app:sliderStartAutoCycle="true" />
 
             <androidx.recyclerview.widget.RecyclerView
@@ -133,7 +133,6 @@
                 android:layout_height="wrap_content"
                 tools:itemCount="2"
                 tools:listitem="@layout/item_layout" />
-
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </LinearLayout>

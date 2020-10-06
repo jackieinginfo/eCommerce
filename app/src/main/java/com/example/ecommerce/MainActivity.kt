@@ -34,8 +34,8 @@ class MainActivity : AppCompatActivity()
             adapter =  ItemUnitAdapter()
             layoutManager = LinearLayoutManager(context)
             }
-        main_recycler_view.apply {
-            adapter = Itemunit2Adapter()
+        main_recycler.apply {
+            adapter = ItemUnit2Adapter()
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL,false)
 
         }

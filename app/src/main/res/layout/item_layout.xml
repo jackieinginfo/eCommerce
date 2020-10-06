@@ -30,14 +30,14 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/one"
-            />
+            android:src="@drawable/one" />
+
+
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@drawable/two" />
-
     </LinearLayout>
 
     <LinearLayout
@@ -129,7 +129,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:fontFamily="serif"
-       android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
         android:gravity="center_vertical"
         android:text="see All"
         android:textColor="@color/rosy_brown"/>
