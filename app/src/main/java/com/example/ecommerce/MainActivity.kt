@@ -16,6 +16,8 @@ class MainActivity : AppCompatActivity()
         setContentView(R.layout.activity_main)
 
 
+
+
         val imageSliderAdapter = ImageSliderAdapter(this)
         main_image_android.setSliderAdapter(imageSliderAdapter)
         main_image_android.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION)

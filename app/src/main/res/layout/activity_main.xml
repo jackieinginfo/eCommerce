@@ -105,7 +105,7 @@
                 android:layout_marginTop="6dp"
                 android:layout_marginBottom="6dp"
                 android:background="@color/white_smoke"
-                tools:itemCount="3"
+                tools:itemCount="5"
                 tools:listitem="@layout/item_layout2" />
 
 
@@ -124,7 +124,7 @@
                 app:sliderIndicatorPadding="3dp"
                 app:sliderIndicatorRadius="1.5dp"
                 app:sliderIndicatorSelectedColor="@android:color/white"
-                app:sliderIndicatorUnselectedColor="@android:color/primary_text_light"
+                app:sliderIndicatorUnselectedColor="@color/colorPrimaryDark"
                 app:sliderScrollTimeInSec="5"
                 app:sliderStartAutoCycle="true" />
 
