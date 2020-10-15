@@ -17,7 +17,8 @@ import android.widget.ProgressBar
 import android.widget.Toast
 import com.example.ecommerce.R
 
-class eCommerceLogin : Fragment() {
+class eCommerceLogin : Fragment()
+{
 
     private lateinit var loginViewModel: LoginViewModel
 

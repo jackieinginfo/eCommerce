@@ -2,11 +2,11 @@ package com.example.ecommerce
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.smarteist.autoimageslider.SliderAnimations
 import androidx.databinding.DataBindingUtil
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.ecommerce.databinding.ActivityMainBinding
 import com.example.ecommerce.ui.login.eCommerceLogin
+import com.smarteist.autoimageslider.SliderAnimations
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity()
         super.onCreate(savedInstanceState)
         activitiesBinding =
             DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+
 
         //EcommerceLogin
 
