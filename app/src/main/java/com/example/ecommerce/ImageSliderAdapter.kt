@@ -4,14 +4,14 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.view.menu.ActionMenuItem
 import com.bumptech.glide.Glide
 import com.smarteist.autoimageslider.SliderViewAdapter
 import kotlinx.android.synthetic.main.items_image_slider.view.*
-import java.util.ArrayList
+import java.util.*
 
 class ImageSliderAdapter(private val context: Context) :
     SliderViewAdapter<ImageSliderAdapter.ImageSliderVH>() {
+
     private var mSlidetItems: List<String> = ArrayList()
 
     fun renewItems(sliderItem: List<String>) {
@@ -41,10 +41,7 @@ class ImageSliderAdapter(private val context: Context) :
     override fun getCount() = mSlidetItems.size
 
     override fun onBindViewHolder(viewHolder: ImageSliderVH?, position: Int) {
-        if (viewHolder != null) {
-            viewHolder.bind(context,mSlidetItems[position])
-
-        }
+        viewHolder?.bind(context ,mSlidetItems[position])
     }
 
 }

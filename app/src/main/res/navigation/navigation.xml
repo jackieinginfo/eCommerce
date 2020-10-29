@@ -5,6 +5,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
     tools:listitem="@layout/fragment_e_commerce_login"
-    tools:ignore="UnusedNavigation">
+    tools:ignore="UnusedNavigation"
+    app:startDestination="@id/title2">
 
+    <fragment
+        android:id="@+id/title2"
+        android:name="com.example.ecommerce.Title"
+        android:label="fragment_titel"
+        tools:layout="@layout/fragment_titel" >
+        <action
+            android:id="@+id/action_title2_to_welcom"
+            app:destination="@id/welcom"
+            app:popUpTo="@id/welcom"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/eCommerceLogin"
+        android:name="com.example.ecommerce.ui.login.eCommerceLogin"
+        android:label="fragment_e_commerce_login"
+
+        tools:layout="@layout/fragment_e_commerce_login" >
+        <action
+            android:id="@+id/action_eCommerceLogin_to_welcom"
+            app:destination="@id/welcom"
+            app:popUpTo="@id/welcom"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcom"
+        android:name="com.example.ecommerce.welcom"
+        android:label="fragment_welcom"
+        tools:layout="@layout/fragment_welcom" >
+        <action
+            android:id="@+id/action_welcom_to_eCommerceLogin"
+            app:destination="@id/eCommerceLogin"
+            app:popUpTo="@id/welcom"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.ecommerce.aboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/help"
+        android:name="com.example.ecommerce.help"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/setting"
+        android:name="com.example.ecommerce.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/notification"
+        android:name="com.example.ecommerce.notFragment"
+        android:label="fragment_not"
+        tools:layout="@layout/fragment_not" />
 </navigation>

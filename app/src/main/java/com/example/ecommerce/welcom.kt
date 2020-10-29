@@ -6,12 +6,10 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
-import com.example.ecommerce.databinding.FragmentTitelBinding
+import com.example.ecommerce.databinding.FragmentWelcomBinding
 
 
-
-
-class Title : Fragment() {
+class welcom : Fragment() {
 
 
     override fun onCreateView(
@@ -19,27 +17,25 @@ class Title : Fragment() {
         ViewGroup?, savedInstanceState:
         Bundle?
     ): View? {
-        val titlebinding =
-            DataBindingUtil.inflate<FragmentTitelBinding>(
+        val binding =
+            DataBindingUtil.inflate<FragmentWelcomBinding>(
                 inflater,
-                R.layout.fragment_titel,
-                container,
-                false
+                com.example.ecommerce.R.layout.fragment_welcom, container, false
             )
 
-        //  v.findNavController().navigate(TitleFragmentDirections.actionTitleFragmentToGameFragment())
-        titlebinding.playButton.setOnClickListener { view: View ->
-            view.findNavController().navigate(R.id.action_title2_to_welcom)
-        }
 
+        binding.logginPerson.setOnClickListener{
+                view: View ->
+            view.findNavController().navigate(R.id.action_welcom_to_eCommerceLogin)
+        }
         setHasOptionsMenu(true)
-        return titlebinding.root
+        return binding.root
 
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
-        inflater.inflate(R.menu.options_menu, menu)
+        inflater.inflate(R.menu.welcom, menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -47,6 +43,4 @@ class Title : Fragment() {
         onNavDestinationSelected(item,requireView().findNavController())
                 || super.onOptionsItemSelected(item)
     }
-
 }
-
