@@ -7,16 +7,8 @@
     android:background="@color/colorPrimary"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:fontFamily="serif"
-        android:text="SmartPhone Top Bands"
-        android:textColor="@color/black"
-        android:textSize="18dp"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -27,6 +19,7 @@
 
 
         <ImageView
+            android:id="@+id/triangle"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"

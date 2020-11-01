@@ -9,8 +9,6 @@ import androidx.navigation.ui.NavigationUI
 import com.example.ecommerce.databinding.FragmentTitelBinding
 
 
-
-
 class Title : Fragment() {
 
 
@@ -27,8 +25,8 @@ class Title : Fragment() {
                 false
             )
 
-        //  v.findNavController().navigate(TitleFragmentDirections.actionTitleFragmentToGameFragment())
-        titlebinding.playButton.setOnClickListener { view: View ->
+
+        titlebinding.back.setOnClickListener { view: View ->
             view.findNavController().navigate(R.id.action_title2_to_welcom)
         }
 
@@ -43,10 +41,15 @@ class Title : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return NavigationUI.
-        onNavDestinationSelected(item,requireView().findNavController())
+        return NavigationUI.onNavDestinationSelected(item, requireView().findNavController())
                 || super.onOptionsItemSelected(item)
     }
 
 }
+
+
+//  v.findNavController().navigate(TitleFragmentDirections.actionTitleFragmentToGameFragment())
+// titlebinding.back.setOnClickListener { view: View ->
+// view.findNavController().navigate(R.id.action_title2_to_welcom)
+//}
 

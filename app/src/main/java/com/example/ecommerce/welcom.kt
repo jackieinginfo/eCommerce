@@ -28,7 +28,14 @@ class welcom : Fragment() {
                 view: View ->
             view.findNavController().navigate(R.id.action_welcom_to_eCommerceLogin)
         }
+
+        binding.cart.setOnClickListener{
+                view: View ->
+            view.findNavController().navigate(R.id.action_welcom_to_title2)
+        }
         setHasOptionsMenu(true)
+
+
         return binding.root
 
     }

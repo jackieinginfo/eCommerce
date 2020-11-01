@@ -6,12 +6,12 @@
     android:id="@+id/navigation"
     tools:listitem="@layout/fragment_e_commerce_login"
     tools:ignore="UnusedNavigation"
-    app:startDestination="@id/title2">
+    app:startDestination="@id/welcom">
 
     <fragment
         android:id="@+id/title2"
         android:name="com.example.ecommerce.Title"
-        android:label="fragment_titel"
+        android:label="Titel"
         tools:layout="@layout/fragment_titel" >
         <action
             android:id="@+id/action_title2_to_welcom"
@@ -22,7 +22,7 @@
     <fragment
         android:id="@+id/eCommerceLogin"
         android:name="com.example.ecommerce.ui.login.eCommerceLogin"
-        android:label="fragment_e_commerce_login"
+        android:label="Login"
 
         tools:layout="@layout/fragment_e_commerce_login" >
         <action
@@ -34,23 +34,26 @@
     <fragment
         android:id="@+id/welcom"
         android:name="com.example.ecommerce.welcom"
-        android:label="fragment_welcom"
+        android:label="Welcom"
         tools:layout="@layout/fragment_welcom" >
         <action
             android:id="@+id/action_welcom_to_eCommerceLogin"
             app:destination="@id/eCommerceLogin"
             app:popUpTo="@id/welcom"
             app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_welcom_to_title2"
+            app:destination="@id/title2" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.ecommerce.aboutFragment"
-        android:label="fragment_about"
+        android:label="About"
         tools:layout="@layout/fragment_about" />
     <fragment
         android:id="@+id/help"
         android:name="com.example.ecommerce.help"
-        android:label="fragment_help"
+        android:label="Help"
         tools:layout="@layout/fragment_help" />
     <fragment
         android:id="@+id/setting"
@@ -59,6 +62,21 @@
     <fragment
         android:id="@+id/notification"
         android:name="com.example.ecommerce.notFragment"
-        android:label="fragment_not"
+        android:label="Notification"
         tools:layout="@layout/fragment_not" />
+    <fragment
+        android:id="@+id/blue"
+        android:name="com.example.ecommerce.blueFragment"
+        android:label="Blue"
+        tools:layout="@layout/fragment_blue" />
+    <fragment
+        android:id="@+id/white"
+        android:name="com.example.ecommerce.whiteFragment"
+        android:label="White"
+        tools:layout="@layout/fragment_white" />
+    <fragment
+        android:id="@+id/rosa"
+        android:name="com.example.ecommerce.rosaFragment"
+        android:label="Rosa"
+        tools:layout="@layout/fragment_rosa" />
 </navigation>

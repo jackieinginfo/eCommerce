@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/username"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="@string/rules" />
+    <item
+        android:id="@+id/blue"
+        android:icon="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:title="Blue Cake" />
+
+    <item
+        android:id="@+id/white"
+        android:icon="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:title="Choco Cake" />
+
+    <item
+        android:id="@+id/rosa"
+        android:icon="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:title="Rosa Cake" />
+
+</menu>
