@@ -84,7 +84,20 @@
         </com.google.android.material.appbar.AppBarLayout>
 
 
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layoutManager= "androidx.recyclerview.widget.GridLayoutManager"
+                tools:listitem="@layout/item_layout2"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        
     </LinearLayout>
 </layout>
 
