@@ -32,6 +32,7 @@
                     android:drawableStart="@drawable/shopping" />
 
                 <TextView
+                    android:id="@+id/mic"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -97,7 +98,7 @@
                 app:layoutManager= "androidx.recyclerview.widget.GridLayoutManager"
                 tools:listitem="@layout/item_layout2"/>
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
-        
+
     </LinearLayout>
 </layout>
 

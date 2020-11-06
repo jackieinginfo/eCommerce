@@ -11,7 +11,11 @@ import com.squareup.picasso.Picasso
 import kotlinx.android.extensions.LayoutContainer
 
 
-class MyQuoteAdapter(private val products: ArrayList<Product>) : RecyclerView.Adapter<MyQuoteAdapter.ViewHolder>() {
+class MyQuoteAdapter(private val products: ArrayList<Product>) :
+    RecyclerView.Adapter<MyQuoteAdapter.ViewHolder>()
+
+
+{
     private var items = listOf<Product>()
 
 
@@ -35,52 +39,42 @@ class MyQuoteAdapter(private val products: ArrayList<Product>) : RecyclerView.Ad
     }
 
 
-
     override fun getItemCount(): Int = items.size
 
 
-
-
-    class ViewHolder (override val containerView: View) : RecyclerView.ViewHolder(containerView),
+    class ViewHolder(override val containerView: View) : RecyclerView.ViewHolder(containerView),
         LayoutContainer {
-        val image : ImageView = itemView.findViewById(R.id.contentTextView)
-        val title : TextView = itemView.findViewById(R.id.sourceTextView)
-        val price : TextView = itemView.findViewById(R.id.price)
+        val image: ImageView = itemView.findViewById(R.id.contentTextView)
+        val title: TextView = itemView.findViewById(R.id.sourceTextView)
+        val price: TextView = itemView.findViewById(R.id.price)
 
     }
 
 }
 
 
+//private var lbEvent :TextView = itemView.findViewById(R.id.sourceTextView)
 
+/**
+ * This function will get called once for each item in the collection thaat we want to show  in our recycler view
+ * Paint a single raw of the recycler view with this Product data class
+ */
+/*    fun UpdateEvent(event: Event){
 
+        lbEvent.text = event.toString()
+        if(event.localPhotoUri != null && event.photo != "null"){
+            ImageDecoder.createSource(activity!!.conteResolver, uri.parse)
+            val bitmap = ImageDecoder.decodeBitmap(source)
+            image.setImageBitmap(bitmap)
 
-
-
-
-
-        //private var lbEvent :TextView = itemView.findViewById(R.id.sourceTextView)
-
-        /**
-         * This function will get called once for each item in the collection thaat we want to show  in our recycler view
-         * Paint a single raw of the recycler view with this Product data class
-         */
-    /*    fun UpdateEvent(event: Event){
-
-            lbEvent.text = event.toString()
-            if(event.localPhotoUri != null && event.photo != "null"){
-                ImageDecoder.createSource(activity!!.conteResolver, uri.parse)
-                val bitmap = ImageDecoder.decodeBitmap(source)
-                image.setImageBitmap(bitmap)
-
-            }
         }
+    }
 
 
-        private fun clearAll(
+    private fun clearAll(
 
-        ){.setText("")
-            .}   */
+    ){.setText("")
+        .}   */
 
 
 

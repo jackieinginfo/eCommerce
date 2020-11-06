@@ -24,59 +24,82 @@
         android:name="com.example.ecommerce.ui.login.eCommerceLogin"
         android:label="Login"
 
-        tools:layout="@layout/fragment_e_commerce_login" >
-        <action
-            android:id="@+id/action_eCommerceLogin_to_welcom"
-            app:destination="@id/welcom"
-            app:popUpTo="@id/welcom"
-            app:popUpToInclusive="true" />
-    </fragment>
+        tools:layout="@layout/fragment_e_commerce_login" />
+
+
     <fragment
         android:id="@+id/welcom"
         android:name="com.example.ecommerce.welcom"
         android:label="Welcom"
         tools:layout="@layout/fragment_welcom" >
         <action
-            android:id="@+id/action_welcom_to_eCommerceLogin"
-            app:destination="@id/eCommerceLogin"
-            app:popUpTo="@id/welcom"
+            android:id="@+id/action_welcom_to_title2"
+            app:destination="@id/title2"
             app:popUpToInclusive="false" />
         <action
-            android:id="@+id/action_welcom_to_title2"
-            app:destination="@id/title2" />
+            android:id="@+id/action_welcom_to_realTimeActivity"
+            app:destination="@id/realTimeActivity" />
+        <action
+            android:id="@+id/action_welcom_to_activityFragment"
+            app:destination="@id/activityFragment" />
+        <action
+            android:id="@+id/action_welcom_to_eCommerceLogin"
+            app:destination="@id/eCommerceLogin" />
     </fragment>
+
+
+
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.example.ecommerce.aboutFragment"
+        android:name="com.example.ecommerce.viewFragment.aboutFragment"
         android:label="About"
         tools:layout="@layout/fragment_about" />
     <fragment
         android:id="@+id/help"
-        android:name="com.example.ecommerce.help"
+        android:name="com.example.ecommerce.viewFragment.help"
         android:label="Help"
         tools:layout="@layout/fragment_help" />
     <fragment
         android:id="@+id/setting"
-        android:name="com.example.ecommerce.SettingsFragment"
+        android:name="com.example.ecommerce.viewFragment.SettingsFragment"
         android:label="SettingsFragment" />
     <fragment
         android:id="@+id/notification"
-        android:name="com.example.ecommerce.notFragment"
+        android:name="com.example.ecommerce.viewFragment.notFragment"
         android:label="Notification"
         tools:layout="@layout/fragment_not" />
     <fragment
         android:id="@+id/blue"
-        android:name="com.example.ecommerce.blueFragment"
+        android:name="com.example.ecommerce.viewFragment.blueFragment"
         android:label="Blue"
         tools:layout="@layout/fragment_blue" />
     <fragment
         android:id="@+id/white"
-        android:name="com.example.ecommerce.whiteFragment"
+        android:name="com.example.ecommerce.viewFragment.whiteFragment"
         android:label="White"
         tools:layout="@layout/fragment_white" />
+
+
+
     <fragment
         android:id="@+id/rosa"
-        android:name="com.example.ecommerce.rosaFragment"
+        android:name="com.example.ecommerce.viewFragment.rosaFragment"
         android:label="Rosa"
         tools:layout="@layout/fragment_rosa" />
+    <activity
+        android:id="@+id/realTimeActivity"
+        android:name="com.example.ecommerce.firebase.RealTimeActivity"
+        android:label="activity_real_time"
+        tools:layout="@layout/activity_real_time" />
+    <fragment
+        android:id="@+id/activityFragment"
+        android:name="com.example.ecommerce.firebase.ActivityFragment"
+        android:label="ActivityFragment"
+        tools:layout="@layout/fragment_activity"/>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.ecommerce.firebase.SettingsFragment"
+        android:label="SettingsFragment"/>
+
+
 </navigation>

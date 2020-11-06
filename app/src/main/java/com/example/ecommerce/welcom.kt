@@ -69,13 +69,21 @@ class welcom : Fragment() {
 
         binding.logginPerson.setOnClickListener{
                 view: View ->
-            view.findNavController().navigate(R.id.action_welcom_to_eCommerceLogin)
+            view.findNavController().navigate(R.id.action_welcom_to_activityFragment)
         }
 
         binding.cart.setOnClickListener{
                 view: View ->
             view.findNavController().navigate(R.id.action_welcom_to_title2)
         }
+
+        binding.mic.setOnClickListener{
+                view: View ->
+            view.findNavController().navigate(R.id.action_welcom_to_eCommerceLogin)
+        }
+
+
+
         setHasOptionsMenu(true)
 
         var view = inflater.inflate(R.layout.fragment_welcom, container, false)

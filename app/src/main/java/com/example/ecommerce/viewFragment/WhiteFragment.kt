@@ -1,4 +1,4 @@
-package com.example.ecommerce
+package com.example.ecommerce.viewFragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.ecommerce.MyQuoteAdapter
+import com.example.ecommerce.R
 import com.example.ecommerce.data.model.Product
 import kotlinx.android.synthetic.main.fragment_blue.*
 
