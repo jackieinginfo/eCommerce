@@ -5,13 +5,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.ecommerce.welcom">
+    tools:context="com.example.ecommerce.welcom"
+    android:fitsSystemWindows="true">
+
+
 
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/chococake3"
         android:orientation="vertical">
 
         <com.google.android.material.appbar.AppBarLayout
@@ -73,7 +76,7 @@
                     android:id="@+id/search_bar"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_margin="10dp"
+                    android:layout_margin="8dp"
                     android:background="@drawable/search_background"
                     android:drawableStart="@drawable/ic_baseline_search_24"
                     android:drawableEnd="@drawable/ic_baseline_photo_camera_24"
@@ -81,24 +84,48 @@
                     android:hint="Search"
                     android:imeOptions="actionDone"
                     android:padding="6dp" />
+
+
+
+
             </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/list"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sale1"
+                />
+                <ImageView
+                    android:id="@+id/list1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sale1" />
+                <ImageView
+                    android:id="@+id/list2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sale1"
+                    />
+
+                <ImageView
+                    android:id="@+id/list4"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sale1"
+                    />
+
+
+
+        </LinearLayout>
         </com.google.android.material.appbar.AppBarLayout>
 
 
-        <androidx.coordinatorlayout.widget.CoordinatorLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/list"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                app:layoutManager= "androidx.recyclerview.widget.GridLayoutManager"
-                tools:listitem="@layout/item_layout2"/>
-        </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
     </LinearLayout>
-</layout>
+
+ </layout>
 

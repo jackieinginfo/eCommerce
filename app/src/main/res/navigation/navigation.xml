@@ -24,7 +24,13 @@
         android:name="com.example.ecommerce.ui.login.eCommerceLogin"
         android:label="Login"
 
-        tools:layout="@layout/fragment_e_commerce_login" />
+        tools:layout="@layout/fragment_e_commerce_login" >
+        <action
+            android:id="@+id/action_eCommerceLogin_to_welcom"
+            app:destination="@id/welcom"
+            app:popUpTo="@id/welcom"
+            app:popUpToInclusive="true" />
+    </fragment>
 
 
     <fragment
@@ -36,9 +42,6 @@
             android:id="@+id/action_welcom_to_title2"
             app:destination="@id/title2"
             app:popUpToInclusive="false" />
-        <action
-            android:id="@+id/action_welcom_to_realTimeActivity"
-            app:destination="@id/realTimeActivity" />
         <action
             android:id="@+id/action_welcom_to_activityFragment"
             app:destination="@id/activityFragment" />
@@ -86,11 +89,6 @@
         android:name="com.example.ecommerce.viewFragment.rosaFragment"
         android:label="Rosa"
         tools:layout="@layout/fragment_rosa" />
-    <activity
-        android:id="@+id/realTimeActivity"
-        android:name="com.example.ecommerce.firebase.RealTimeActivity"
-        android:label="activity_real_time"
-        tools:layout="@layout/activity_real_time" />
     <fragment
         android:id="@+id/activityFragment"
         android:name="com.example.ecommerce.firebase.ActivityFragment"

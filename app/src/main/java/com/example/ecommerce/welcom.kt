@@ -6,11 +6,8 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.ecommerce.data.model.Product
 import com.example.ecommerce.databinding.FragmentWelcomBinding
-import kotlinx.android.synthetic.main.fragment_blue.*
 
 
 class welcom : Fragment() {
@@ -26,14 +23,14 @@ class welcom : Fragment() {
                     //putInt(this@Companion.toString(), 2)
                 }
             }
-    }
+    }/*
 
     fun loadView(view: View) {
         var recyclerView: RecyclerView = view.findViewById<RecyclerView>(R.id.list) as RecyclerView
         recyclerView.layoutManager = GridLayoutManager(context, 2)
         recyclerView.setHasFixedSize(true)
         recyclerView.adapter = MyQuoteAdapter(products)
-    }
+    }*/
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
@@ -43,7 +40,7 @@ class welcom : Fragment() {
         adapter = MyQuoteAdapter(products)
         adapter.replaceItems(products)
 
-        list.adapter = adapter
+        //list.adapter = adapter
     }
 
     private lateinit var adapter: MyQuoteAdapter
@@ -69,7 +66,7 @@ class welcom : Fragment() {
 
         binding.logginPerson.setOnClickListener{
                 view: View ->
-            view.findNavController().navigate(R.id.action_welcom_to_activityFragment)
+            view.findNavController().navigate(R.id.action_welcom_to_eCommerceLogin)
         }
 
         binding.cart.setOnClickListener{
@@ -77,17 +74,14 @@ class welcom : Fragment() {
             view.findNavController().navigate(R.id.action_welcom_to_title2)
         }
 
-        binding.mic.setOnClickListener{
-                view: View ->
-            view.findNavController().navigate(R.id.action_welcom_to_eCommerceLogin)
-        }
+
 
 
 
         setHasOptionsMenu(true)
 
         var view = inflater.inflate(R.layout.fragment_welcom, container, false)
-        loadView(view)
+        //loadView(view)
         return binding.root
 
     }

@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <menu
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <group android:checkableBehavior="single">
 
     <item
         android:id="@+id/username"
-        android:icon="@drawable/ic_baseline_person_24"
-        android:title="@string/rules" />
+        android:icon="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:title="About" />
     <item
         android:id="@+id/blue"
         android:icon="@drawable/ic_baseline_keyboard_arrow_right_24"
@@ -21,5 +26,6 @@
         android:id="@+id/rosa"
         android:icon="@drawable/ic_baseline_keyboard_arrow_right_24"
         android:title="Rosa Cake" />
+    </group>
 
 </menu>
