@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:padding="5dp"
         android:textSize="20sp"
-        android:text="WELCOME!!!"
+        android:text="HALLO!!"
         android:textColor="#FAC1F7"/>
     </LinearLayout>
 </layout>

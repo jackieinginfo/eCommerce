@@ -16,8 +16,7 @@
         <action
             android:id="@+id/action_title2_to_welcom"
             app:destination="@id/welcom"
-            app:popUpTo="@id/welcom"
-            app:popUpToInclusive="true" />
+            app:popUpTo="@id/welcom" />
     </fragment>
     <fragment
         android:id="@+id/eCommerceLogin"
@@ -42,9 +41,7 @@
             android:id="@+id/action_welcom_to_title2"
             app:destination="@id/title2"
             app:popUpToInclusive="false" />
-        <action
-            android:id="@+id/action_welcom_to_activityFragment"
-            app:destination="@id/activityFragment" />
+
         <action
             android:id="@+id/action_welcom_to_eCommerceLogin"
             app:destination="@id/eCommerceLogin" />
@@ -89,11 +86,7 @@
         android:name="com.example.ecommerce.viewFragment.rosaFragment"
         android:label="Rosa"
         tools:layout="@layout/fragment_rosa" />
-    <fragment
-        android:id="@+id/activityFragment"
-        android:name="com.example.ecommerce.firebase.ActivityFragment"
-        android:label="ActivityFragment"
-        tools:layout="@layout/fragment_activity"/>
+
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.example.ecommerce.firebase.SettingsFragment"

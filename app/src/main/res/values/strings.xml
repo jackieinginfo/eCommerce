@@ -33,7 +33,6 @@
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
 
 
-
     <string name="login_button_text">Login</string>
     <string name="logout_button_text">Logout</string>
     <string name="login_unsuccessful_msg">Login unsuccessful</string>
@@ -46,7 +45,6 @@
 
     <string name="fact_type_android">Android</string>
     <string name="fact_type_california">California</string>
-    <string name="Wel">welcome!! %1$s! .</string>
 
     <!--Shared Preference Keys -->
     <string name="preference_fact_type_key">fact_type_pref</string>

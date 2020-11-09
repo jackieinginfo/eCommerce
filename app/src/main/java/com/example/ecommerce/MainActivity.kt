@@ -26,6 +26,8 @@ class MainActivity : AppCompatActivity() {
        NavigationUI.setupWithNavController(Binding.navView, navController)
 
 
+
+
 /*
         val products = arrayListOf<Product>()
         for (i in 0..100) {

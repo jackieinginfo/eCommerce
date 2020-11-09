@@ -1,0 +1,20 @@
+// Pointe vers la référence racine 
+storageRef = storage . reference 
+
+// Pointe vers "images" 
+imagesRef = storageRef . child ( "images" ) 
+
+// Pointe vers "images / space.jpg" 
+// Notez que vous pouvez utiliser des variables pour créer des valeurs enfants 
+
+val fileName = "space.jpg" spaceRef = imagesRef . child ( fileName ) 
+
+
+// Le chemin du fichier est "images / space.jpg" 
+val path = spaceRef . chemin 
+
+// Le nom du fichier est "space.jpg"
+nom = spaceRef . name 
+
+// Pointe vers "images" 
+imagesRef = spaceRef . parent
